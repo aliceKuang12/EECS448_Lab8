@@ -1,0 +1,19 @@
+body {
+	background-image: url("garden2.jpg");
+	background-repeat: no-repeat;
+}
+
+p{
+	background-color: #F0FFF0; color: #2F4F4F;
+	font-family: Geneva;
+}
+
+div{
+	background-color: #F0FFF0; color: #2F4F4F;
+	text-align: center;
+}
+a:hover
+{
+color: #4169E1;
+}
+	

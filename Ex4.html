@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Exercise 4 </title>
+	</head>
+		<style>
+			p{
+				border-style: solid;
+				border-width: 0;
+			}
+			.tab {
+				display: inline-block;
+				margin-left: 35px;
+			}
+			.tab2 {
+				display: inline-block;
+				margin-left: 32px;
+			}
+			
+			.tab3 {
+				display: inline-block;
+				margin-left: 100px;
+			}
+		</style>
+	<body>
+		
+			<p id = p1>Let's change the border and background this paragraph! <br> 
+			Specify the background and border colors using RGB values in the format "#RRGGBB", where each pair of letters is in 
+			hexadecimal (units betwee 00-FF).<br> To view the border, specify the border width in of the form Dpx, where D is a number greater than zero.</p>
+		
+		<label>Border Color </label> <span class = "tab"></span>
+		<input type="text" name="txtBorder" id="txtBorder"/>
+		<br> 
+		<label>Border Width</label> <span class = "tab2"></span> 
+		<input type="text" name="txtWidth" id="txtWidth"/>
+		<br>
+		<label>Background Color </label>
+		<input type="text" name="txtBackground" id="txtBackground"/> <br> 
+		<br> <span class = "tab3"></span>  		
+		<button id = "submit" onclick = "changeColor();">Change Presets</submit> 
+	</body>
+	
+	<script>
+		function changeColor(){
+			var paragraph = document.getElementById("p1");
+			paragraph.style.borderColor = txtBorder.value;
+			paragraph.style.borderWidth = txtWidth.value;
+			paragraph.style.backgroundColor = txtBackground.value;
+
+		}
+	</script>
+	
+<html>
